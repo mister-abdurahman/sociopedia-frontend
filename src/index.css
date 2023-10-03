@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+.fullpage-loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-image: linear-gradient(
+    rgba(10, 10, 10, 0.4),
+    rgba(10, 10, 10, 0.4)
+  );
+  z-index: 99;
+}
+.loader-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-svg {
+  animation: spin 1s linear infinite;
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
