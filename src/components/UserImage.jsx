@@ -18,7 +18,6 @@ const UserImage = ({ image, size = "60px" }) => {
             : `${alert}`
         }
       />
-      )
     </Box>
   );
 };
