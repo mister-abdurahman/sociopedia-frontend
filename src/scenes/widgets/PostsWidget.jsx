@@ -61,7 +61,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
         <Loader />
       ) : (
         <>
-          {posts.map(
+          {posts?.map(
             ({
               _id,
               userId,
